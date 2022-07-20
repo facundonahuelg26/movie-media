@@ -1,0 +1,38 @@
+.btns-container{
+    margin-top: 20px;
+    width: 100vw;
+    height: 40px;
+    /* background: blue; */
+    display: flex;
+    justify-content: center;
+}
+.btns-container-child{
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.btns-pag{
+    width: 40px;
+    height: 40px;
+    background: #222222;
+    border: none;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+.btns-pag-child-1,
+.btns-pag-child-2{
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    top: 10px;
+    position: absolute;
+}
+.btns-pag-child-1{
+    left: 9px;
+}
+.btns-pag-child-2{
+    left: 10px;
+}

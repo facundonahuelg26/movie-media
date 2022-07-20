@@ -1,0 +1,152 @@
+.body-grid{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 97vw;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(288px, 1fr));
+    grid-gap: 20px;
+}
+
+.item{
+    width: 288px;
+    height: 432px;
+    margin-top: 15px;
+}
+.no-results-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.image-default{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.container-change-btn{
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+.change-btn{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 120px;
+    cursor: pointer;
+}
+
+.change-btn-svg{
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        margin-left: 0;
+        display: block;
+    }
+
+    .item{
+        width: 100vw;
+        height: 432px;
+        margin-top: 30px;
+    }
+    
+    .image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: none;
+    }
+}
+
+
+/************* ListData ****************/
+
+.container-ul{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+}
+.item-list{
+    width: 100vw;
+    height: 432px;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.container-image{
+    width: 100vw;
+    height: 432px;
+}
+
+.image-list{
+    width: 100%;
+    height: 432px;
+    object-fit: cover;
+    opacity: .1;
+}
+.image-list-default{
+    width: 100%;
+    height: 432px;
+    object-fit: cover;
+    opacity: .1;
+}
+
+.data-list{
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-left: 20px;
+    position: absolute;
+    top: 20px;
+}
+
+.data-list-title{
+    font-size: 20px;
+    font-weight: 700;
+}
+.data-list,p,
+.data-list,p,
+.data-list,p{
+    color: #ffffff;
+}
+
+.points{
+    color: yellow;
+}
+
+@media screen and (max-width: 555px) {
+    .container{
+        margin-left: 0;
+    }
+
+    .container-image{
+        width: 100vw;
+        height: 432px;
+    }
+    .image-list{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 1;
+    }
+    .data-list{
+        display: none;
+    }
+}
